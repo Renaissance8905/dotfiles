@@ -2,10 +2,25 @@
 	name = Chris Spradling
 	email = cjspradling@gmail.com
 [core]
-	excludesfile = /Users/cjspradling/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	preloadindex = true
+[color]
+	ui = auto
+[color.grep]
+	filename = bold green
+	match = black yellow
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+[diff]
+	algorithm = patience
+	renames = copies
+[push]
+	default = tracking
+
 [mergetool "sourcetree"]
 	cmd = /private/var/folders/kp/7346mvqn4y95zry6y74gqpch0000gn/T/AppTranslocation/6C52828A-1602-43D9-855A-63DE3ED5901F/d/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[alias]
+	s = status --short --branch
+	ach = grep --extended-regexp --break --heading --line-number
