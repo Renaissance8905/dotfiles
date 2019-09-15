@@ -108,3 +108,4 @@ source $HOME/.aliases
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 neofetch
+echo -e "\n$(print_dotfiles)\n"
