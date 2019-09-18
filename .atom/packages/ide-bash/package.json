@@ -1,0 +1,80 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+  "_id": "ide-bash@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha512-BV3WVh0+9MxVSRg65ZxCnjoMwgqfiIdmbvsccRMhXpcbwMlGVx3z5riYeAP3Q8fneG0eMpYnjF5JB0vTQS4Afg==",
+  "_location": "/ide-bash",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+  "_shasum": "1985acb9e69b2ef977a475c50bfb1d925c8cc4f6",
+  "_spec": "https://www.atom.io/api/packages/ide-bash/versions/1.0.11/tarball",
+  "_where": "/private/var/folders/kp/7346mvqn4y95zry6y74gqpch0000gn/T/apm-install-dir-119815-19513-1han9wg.fkn6",
+  "author": {
+    "name": "Mads Hartmann",
+    "email": "mads3379@gmail.com",
+    "url": "https://twitter.com/mads_hartmann"
+  },
+  "bugs": {
+    "url": "https://github.com/mads-hartmann/ide-bash/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-languageclient": "^0.9.5"
+  },
+  "deprecated": false,
+  "description": "Language Bash language support for Atom-IDE",
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.shell",
+    "bash"
+  ],
+  "homepage": "https://github.com/mads-hartmann/ide-bash#readme",
+  "license": "MIT",
+  "main": "src/main.js",
+  "name": "ide-bash",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mads-hartmann/ide-bash.git"
+  },
+  "version": "1.0.11"
+}
