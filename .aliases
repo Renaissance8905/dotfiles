@@ -12,7 +12,7 @@ alias gco='git checkout'
 alias gcm='git commit -m'
 
 # Cocoapods
-alias podreset='rm -rf pods && pod deintegrate && pod install'
+alias podreset='git submodule update --init --recursive && rm -rf pods && pod deintegrate && pod install'
 
 # Dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
