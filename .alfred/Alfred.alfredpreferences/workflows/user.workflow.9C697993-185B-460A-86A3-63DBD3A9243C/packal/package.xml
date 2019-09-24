@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>alfred-workflow-todoist</name>
+  <version>5.6.1</version>
+  <bundle>com.alfred-workflow-todoist</bundle>
+  <updated>1539634698</updated>
+  <file>alfred_workflow_todoist.alfredworkflow</file>
+</workflow>

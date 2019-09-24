@@ -1,0 +1,5 @@
+Script started on Thu Mar 28 15:33:52 2019
+command: git branch
+^Dfatal: not a git repository (or any of the parent directories): .git
+
+Script done on Thu Mar 28 15:33:52 2019

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.harrisgeo88.current-git-branch</string>
+	<key>connections</key>
+	<dict>
+		<key>4477AE62-D5A4-444D-87D6-A7401297764C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C7821B8-3C4F-4EA8-9D87-93FDF8723DDB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8484DC68-FFF2-4AB6-9E6B-154FD4EF05A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4477AE62-D5A4-444D-87D6-A7401297764C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Harris Geo</string>
+	<key>description</key>
+	<string>Alfred's script filter object is extremely powerful, and gives you control over the results displayed in Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Show active branch</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd ~/PATH/TO/YOUR/APP &amp;&amp; git branch | grep \* | cut -d ' ' -f2-</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4477AE62-D5A4-444D-87D6-A7401297764C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>branch</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>show active branch</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8484DC68-FFF2-4AB6-9E6B-154FD4EF05A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>largetypetext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>9C7821B8-3C4F-4EA8-9D87-93FDF8723DDB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Alfred's Script Filter object is extremely powerful, and gives you control over the results displayed in Alfred.
+
+Alfred 3 now supports JSON, which is the recommended format. XML is also supported for legacy Alfred 2 workflows, and has been updated to include the new features.
+
+A new option now exists for Script Filters, "Alfred filters results". This allows you to return a whole list of results, let Alfred do the subsequent filtering with extreme performance. When this option is selected, your script will be called once with no argument.</string>
+	<key>uidata</key>
+	<dict>
+		<key>4477AE62-D5A4-444D-87D6-A7401297764C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>8484DC68-FFF2-4AB6-9E6B-154FD4EF05A0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>9C7821B8-3C4F-4EA8-9D87-93FDF8723DDB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://harrisgeo.me</string>
+</dict>
+</plist>
