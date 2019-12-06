@@ -10,6 +10,10 @@ alias .....="cd ../../../.."
 alias gs='git status'
 alias gco='git checkout'
 alias gcm='git commit -m'
+alias lastcommit='git log -1 --pretty=%B | head -n 1 | tr -d "\n"'
+alias gcl='lastcommit | pbcopy'
+alias lastdiff="git log -1 | tail -n 1 | tr -d '\n' | awk -F'Differential Revision: ' '{print \$2}'"
+alias gcd= 'lastdiff | pbcopy'
 
 # Cocoapods
 alias podreset='git submodule update --init --recursive && rm -rf pods && pod deintegrate && pod install'
@@ -20,6 +24,9 @@ alias dots='dot status'
 alias dotc='dot commit -m'
 alias dotfiles='dot ls-tree --full-tree --name-only HEAD' # add -r to show full paths rather than top level
 alias lsdot='ls -A | egrep "^\."'
+
+# work
+alias grindr='cd Repos/Grindr3/grindr-3.0-ios'
 
 print_dotfiles() {
   local var sep=":------------------:"
