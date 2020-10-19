@@ -112,3 +112,6 @@ source $HOME/.aliases
 
 neofetch
 echo -e "\n$(print_dotfiles)\n"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
