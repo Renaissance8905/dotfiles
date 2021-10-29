@@ -9,3 +9,6 @@ function lf() {
     ls -rt1 | tail -n ${n} | head -n 1
 }
 alias config='/usr/bin/git --git-dir=/Users/cjspradling/.cfg/ --work-tree=/Users/cjspradling'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

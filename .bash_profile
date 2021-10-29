@@ -16,3 +16,5 @@ alias gr='git rebase'
 alias gs='git status'
 
 alias cdr='cd ~/repos && ls'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
